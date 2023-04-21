@@ -37,7 +37,7 @@ const apiCleanupDaemon = () => {
       clearInterval(timer);
       return;
     };
-  },15000);
+  },3600000);
 
 }
 
@@ -82,7 +82,7 @@ const apiDaemon = () => {
       clearInterval(timer);
       return;
     };
-  },60000);
+  },15000);
 }
 
 module.exports = {apiDaemon, apiCleanupDaemon};
